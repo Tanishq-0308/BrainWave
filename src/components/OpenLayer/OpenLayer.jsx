@@ -413,49 +413,49 @@ const MapComponent = ({
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("standard")}
         >
-          <img src={Standard} alt="" />
+          <img src={Standard} alt="" loading="lazy"/>
           <p>Standard </p>
         </div>
         <div
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("watercolor")}
         >
-          <img src={WaterColor} alt="" />
+          <img src={WaterColor} alt="" loading="lazy"/>
           <p>Watercolor</p>
         </div>
         <div
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("terrain")}
         >
-          <img src={Terrain} alt="" />
+          <img src={Terrain} alt="" loading="lazy"/>
           <p>Terrain</p>
         </div>
         <div
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("outdoor")}
         >
-          <img src={OutDoor} alt="" />
+          <img src={OutDoor} alt="" loading="lazy"/>
           <p>Outdoor</p>
         </div>
         <div
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("toner")}
         >
-          <img src={Toner} alt="" />
+          <img src={Toner} alt="" loading="lazy"/>
           <p>Toner</p>
         </div>
         <div
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("worldimaginary")}
         >
-          <img src={WorldImaginary} alt="" />
+          <img src={WorldImaginary} alt="" loading="lazy"/>
           <p>World Imaginary</p>
         </div>
         <div
           className="w-[150px] cursor-pointer"
           onClick={() => setLayers("topographical")}
         >
-          <img src={Topo} alt="" />
+          <img src={Topo} alt="" loading="lazy"/>
           <p>Topographical</p>
         </div>
       </div>
