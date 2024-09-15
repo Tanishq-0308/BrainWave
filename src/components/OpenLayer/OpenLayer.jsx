@@ -174,6 +174,7 @@ const indiaGeoJson = {
     },
   ],
 };
+const apiKey='91aea2a0-a743-4039-9799-1c74242fc418';
 
 const MapComponent = ({
   sidebar,
@@ -240,19 +241,19 @@ const MapComponent = ({
 
     const watercolor = new TileLayer({
       source: new XYZ({
-        url: "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
+        url: `https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?key=${apiKey}`,
         // apiKey: 'OPTIONAL'
       }),
     });
 
     const toner = new TileLayer({
       source: new XYZ({
-        url: "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}@2x.png",
+        url: `https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}@2x.png?key=${apiKey}`,
       }),
     });
     const outdoor = new TileLayer({
       source: new XYZ({
-        url: "https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}@2x.png",
+        url: `https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}@2x.png?key=${apiKey}`,
         attributions: [
           '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>',
           '&copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a>',
@@ -264,7 +265,7 @@ const MapComponent = ({
     });
     const terrain = new TileLayer({
       source: new XYZ({
-        url: "https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}@2x.png",
+        url: `https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}@2x.png?key=${apiKey}`,
         attributions:
           "Map data © OpenStreetMap contributors, SRTM | OpenTopoMap (CC-BY-SA)",
       }),
