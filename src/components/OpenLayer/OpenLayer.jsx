@@ -241,7 +241,7 @@ const MapComponent = ({
 
     const watercolor = new TileLayer({
       source: new XYZ({
-        url: `https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?key=${apiKey}`,
+        url: `https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?api_key=91aea2a0-a743-4039-9799-1c74242fc418`,
         // apiKey: 'OPTIONAL'
       }),
     });
