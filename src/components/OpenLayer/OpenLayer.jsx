@@ -248,12 +248,12 @@ const MapComponent = ({
 
     const toner = new TileLayer({
       source: new XYZ({
-        url: `https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}@2x.png?key=${apiKey}`,
+        url: `https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}@2x.png?api_key=91aea2a0-a743-4039-9799-1c74242fc418`,
       }),
     });
     const outdoor = new TileLayer({
       source: new XYZ({
-        url: `https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}@2x.png?key=${apiKey}`,
+        url: `https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}@2x.png?api_key=91aea2a0-a743-4039-9799-1c74242fc418`,
         attributions: [
           '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>',
           '&copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a>',
@@ -265,7 +265,7 @@ const MapComponent = ({
     });
     const terrain = new TileLayer({
       source: new XYZ({
-        url: `https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}@2x.png?key=${apiKey}`,
+        url: `https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}@2x.png?api_key=91aea2a0-a743-4039-9799-1c74242fc418`,
         attributions:
           "Map data © OpenStreetMap contributors, SRTM | OpenTopoMap (CC-BY-SA)",
       }),
